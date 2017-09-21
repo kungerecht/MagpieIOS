@@ -1,0 +1,1011 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="860">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="197">
+            <objects>
+                <viewController id="198" sceneMemberID="viewController" customClass="MenuViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="195"/>
+                        <viewControllerLayoutGuide type="bottom" id="196"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="199">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4043" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="1" y="123" width="413" height="613"/>
+                                <variation key="heightClass=regular-widthClass=compact" image="bkgv2.jpg">
+                                    <mask key="constraints">
+                                        <include reference="4873"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="4873" firstAttribute="width" secondItem="4043" secondAttribute="height" multiplier="413:613"/>
+                                    <constraint id="4874" firstAttribute="width" secondItem="4043" secondAttribute="height" multiplier="413:613"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4873"/>
+                                        <exclude reference="4874"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="729" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="37" y="292" width="340" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28" weight="heavy"/>
+                                <state key="normal" title="MAP" backgroundImage="magpieBtn2.png">
+                                    <color key="titleShadowColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue id="6385" destination="5725" kind="show" identifier="ShowMap"/>
+                                </connections>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="732" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="37" y="368" width="340" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28" weight="heavy"/>
+                                <state key="normal" title="QR SCAN" backgroundImage="magpieBtn2.png">
+                                    <color key="titleShadowColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue id="6802" destination="6727" kind="show"/>
+                                </connections>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="735" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="37" y="444" width="340" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28" weight="heavy"/>
+                                <state key="normal" title="SETTINGS" backgroundImage="magpieBtn2.png">
+                                    <color key="titleShadowColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue id="2800" destination="766" kind="show"/>
+                                </connections>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4044" translatesAutoresizingMaskIntoConstraints="NO" text="MAGPIE">
+                                <rect key="frame" x="118" y="77" width="162" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4045" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="50" width="126" height="126"/>
+                                <variation key="heightClass=regular-widthClass=compact" image="magpieLogo2.png"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4798" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="37" y="216" width="340" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28" weight="heavy"/>
+                                <state key="normal" title="BADGES" backgroundImage="magpieBtn2.png">
+                                    <color key="titleShadowColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue id="5362" destination="5290" kind="show" identifier="ShowBadges"/>
+                                </connections>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES"/>
+                            </button>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="729"/>
+                                <exclude reference="732"/>
+                                <exclude reference="735"/>
+                                <exclude reference="4043"/>
+                                <exclude reference="4044"/>
+                                <exclude reference="4045"/>
+                                <exclude reference="4798"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="4745"/>
+                                <exclude reference="4747"/>
+                                <exclude reference="4748"/>
+                                <exclude reference="4749"/>
+                                <exclude reference="4750"/>
+                                <exclude reference="4751"/>
+                                <exclude reference="4752"/>
+                                <exclude reference="4753"/>
+                                <exclude reference="4754"/>
+                                <exclude reference="4755"/>
+                                <exclude reference="4756"/>
+                                <exclude reference="4757"/>
+                                <exclude reference="4799"/>
+                                <exclude reference="4800"/>
+                                <exclude reference="4801"/>
+                                <exclude reference="4870"/>
+                                <exclude reference="4871"/>
+                                <exclude reference="4872"/>
+                                <exclude reference="4875"/>
+                                <exclude reference="4876"/>
+                                <exclude reference="4877"/>
+                                <exclude reference="5016"/>
+                                <exclude reference="5017"/>
+                                <exclude reference="5018"/>
+                                <exclude reference="5019"/>
+                                <exclude reference="5020"/>
+                                <exclude reference="5021"/>
+                                <exclude reference="5022"/>
+                                <exclude reference="5023"/>
+                                <exclude reference="5024"/>
+                                <exclude reference="5025"/>
+                                <exclude reference="5026"/>
+                                <exclude reference="5027"/>
+                                <exclude reference="5028"/>
+                                <exclude reference="5029"/>
+                                <exclude reference="6836"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="729"/>
+                                <include reference="732"/>
+                                <include reference="735"/>
+                                <include reference="4043"/>
+                                <include reference="4044"/>
+                                <include reference="4045"/>
+                                <include reference="4798"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="4745"/>
+                                <include reference="4747"/>
+                                <include reference="4748"/>
+                                <include reference="4749"/>
+                                <include reference="4750"/>
+                                <include reference="4751"/>
+                                <include reference="4752"/>
+                                <include reference="4753"/>
+                                <include reference="4754"/>
+                                <include reference="4755"/>
+                                <include reference="4756"/>
+                                <include reference="4757"/>
+                                <include reference="4799"/>
+                                <include reference="4800"/>
+                                <include reference="4801"/>
+                                <include reference="4870"/>
+                                <include reference="4871"/>
+                                <include reference="4872"/>
+                                <include reference="4875"/>
+                                <include reference="4876"/>
+                                <include reference="4877"/>
+                                <include reference="5016"/>
+                                <include reference="5017"/>
+                                <include reference="5018"/>
+                                <include reference="5019"/>
+                                <include reference="5020"/>
+                                <include reference="5021"/>
+                                <include reference="5022"/>
+                                <include reference="5023"/>
+                                <include reference="5024"/>
+                                <include reference="5025"/>
+                                <include reference="5026"/>
+                                <include reference="5027"/>
+                                <include reference="5028"/>
+                                <include reference="5029"/>
+                                <include reference="6836"/>
+                            </mask>
+                            <color key="tintColor" colorSpace="calibratedRGB" red="0" green="0.52549019607843139" blue="1" alpha="1"/>
+                        </variation>
+                        <constraints>
+                            <constraint id="4745" firstItem="195" firstAttribute="bottom" secondItem="4045" secondAttribute="top" constant="14"/>
+                            <constraint id="4747" firstItem="199" firstAttribute="trailing" secondItem="4045" secondAttribute="trailing" constant="288"/>
+                            <constraint id="4748" firstItem="4045" firstAttribute="leading" secondItem="199" secondAttribute="leading"/>
+                            <constraint id="4749" firstItem="196" firstAttribute="top" secondItem="4045" secondAttribute="bottom" constant="560"/>
+                            <constraint id="4750" firstItem="4044" firstAttribute="top" secondItem="195" secondAttribute="bottom" constant="13"/>
+                            <constraint id="4751" firstItem="199" firstAttribute="trailing" secondItem="4044" secondAttribute="trailing" constant="134"/>
+                            <constraint id="4752" firstItem="196" firstAttribute="top" secondItem="4044" secondAttribute="bottom" constant="613"/>
+                            <constraint id="4753" firstItem="4044" firstAttribute="leading" secondItem="4045" secondAttribute="leading" constant="118"/>
+                            <constraint id="4754" firstItem="195" firstAttribute="bottom" secondItem="4045" secondAttribute="top" constant="14"/>
+                            <constraint id="4755" firstItem="4045" firstAttribute="top" secondItem="199" secondAttribute="top" constant="50"/>
+                            <constraint id="4756" firstItem="4045" firstAttribute="leading" secondItem="199" secondAttribute="leading"/>
+                            <constraint id="4757" firstItem="196" firstAttribute="top" secondItem="4045" secondAttribute="bottom" constant="560"/>
+                            <constraint id="4799" firstItem="199" firstAttribute="trailing" secondItem="4044" secondAttribute="trailing" constant="134"/>
+                            <constraint id="4800" firstItem="199" firstAttribute="trailing" secondItem="4045" secondAttribute="trailing" constant="288"/>
+                            <constraint id="4801" firstItem="199" firstAttribute="trailing" secondItem="4045" secondAttribute="trailing" constant="288"/>
+                            <constraint id="4870" firstItem="4043" firstAttribute="top" secondItem="195" secondAttribute="bottom" constant="59"/>
+                            <constraint id="4871" firstItem="4043" firstAttribute="leading" secondItem="199" secondAttribute="leading" constant="1"/>
+                            <constraint id="4872" firstItem="4043" firstAttribute="trailing" secondItem="199" secondAttribute="trailing"/>
+                            <constraint id="4875" firstItem="4043" firstAttribute="trailing" secondItem="4798" secondAttribute="trailing" constant="37"/>
+                            <constraint id="4876" firstItem="4798" firstAttribute="leading" secondItem="4043" secondAttribute="leading" constant="36"/>
+                            <constraint id="4877" firstItem="4798" firstAttribute="top" secondItem="4044" secondAttribute="bottom" constant="83"/>
+                            <constraint id="5016" firstItem="4798" firstAttribute="leading" secondItem="4043" secondAttribute="leading" constant="36"/>
+                            <constraint id="5017" firstItem="729" firstAttribute="centerY" secondItem="4798" secondAttribute="bottom" constant="47"/>
+                            <constraint id="5018" firstItem="4043" firstAttribute="trailing" secondItem="729" secondAttribute="trailing" constant="37"/>
+                            <constraint id="5019" firstItem="729" firstAttribute="top" secondItem="4798" secondAttribute="centerY" constant="47"/>
+                            <constraint id="5020" firstItem="729" firstAttribute="leading" secondItem="4043" secondAttribute="leading" constant="36"/>
+                            <constraint id="5021" firstItem="732" firstAttribute="centerY" secondItem="729" secondAttribute="bottom" constant="47"/>
+                            <constraint id="5022" firstItem="4043" firstAttribute="trailing" secondItem="732" secondAttribute="trailing" constant="37"/>
+                            <constraint id="5023" firstItem="732" firstAttribute="top" secondItem="729" secondAttribute="centerY" constant="47"/>
+                            <constraint id="5024" firstItem="732" firstAttribute="leading" secondItem="4043" secondAttribute="leading" constant="36"/>
+                            <constraint id="5025" firstItem="735" firstAttribute="centerY" secondItem="732" secondAttribute="bottom" constant="47"/>
+                            <constraint id="5026" firstItem="735" firstAttribute="top" secondItem="732" secondAttribute="centerY" constant="47"/>
+                            <constraint id="5027" firstItem="735" firstAttribute="leading" secondItem="4043" secondAttribute="leading" constant="36"/>
+                            <constraint id="5028" firstItem="4043" firstAttribute="trailing" secondItem="735" secondAttribute="trailing" constant="37"/>
+                            <constraint id="5029" firstItem="196" firstAttribute="top" secondItem="735" secondAttribute="bottom" constant="234"/>
+                            <constraint id="6836" firstItem="4044" firstAttribute="leading" secondItem="4045" secondAttribute="leading" constant="118"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="menuTitle" destination="4044" id="name-outlet-4044"/>
+                        <outlet property="mapBtn" destination="729" id="name-outlet-729"/>
+                        <outlet property="qrBtn" destination="732" id="name-outlet-732"/>
+                        <outlet property="settingsBtn" destination="735" id="name-outlet-735"/>
+                        <outlet property="badgeBtn" destination="4798" id="name-outlet-4798"/>
+                    </connections>
+                    <navigationItem id="2703" key="navigationItem"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="200" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127" y="-397"/>
+        </scene>
+        <scene sceneID="765">
+            <objects>
+                <viewController id="766" sceneMemberID="viewController" title="SETTINGS" customClass="SettingsViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="763"/>
+                        <viewControllerLayoutGuide type="bottom" id="764"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="767" customClass="UIView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3061" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="30" y="128" width="202" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3062" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="30" y="266" width="202" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" minimumFontSize="25" id="3118" translatesAutoresizingMaskIntoConstraints="NO" enabled="NO">
+                                <rect key="frame" x="30" y="177" width="355" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Spokane, WA" borderStyle="roundedRect" minimumFontSize="25" id="3119" translatesAutoresizingMaskIntoConstraints="NO" enabled="NO">
+                                <rect key="frame" x="30" y="315" width="355" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3164" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="37" y="586" width="340" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="LOGOUT" backgroundImage="magpieBtn1.png">
+                                    <color key="titleShadowColor" colorSpace="calibratedRGB" red="1" green="0.00392156862745098" blue="0.00392156862745098" alpha="1"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6991" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="37" y="660" width="340" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="LEGAL" backgroundImage="magpieBtn1.png">
+                                    <color key="titleShadowColor" colorSpace="calibratedRGB" red="1" green="0.00392156862745098" blue="0.00392156862745098" alpha="1"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                            </button>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="3061"/>
+                                <exclude reference="3062"/>
+                                <exclude reference="3118"/>
+                                <exclude reference="3119"/>
+                                <exclude reference="3164"/>
+                                <exclude reference="6991"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="7000"/>
+                                <exclude reference="7001"/>
+                                <exclude reference="7003"/>
+                                <exclude reference="7008"/>
+                                <exclude reference="7009"/>
+                                <exclude reference="7010"/>
+                                <exclude reference="7011"/>
+                                <exclude reference="7012"/>
+                                <exclude reference="7013"/>
+                                <exclude reference="7014"/>
+                                <exclude reference="7015"/>
+                                <exclude reference="7017"/>
+                                <exclude reference="7018"/>
+                                <exclude reference="7019"/>
+                                <exclude reference="7020"/>
+                                <exclude reference="7021"/>
+                                <exclude reference="7022"/>
+                                <exclude reference="7023"/>
+                                <exclude reference="7024"/>
+                                <exclude reference="7025"/>
+                                <exclude reference="7026"/>
+                                <exclude reference="7027"/>
+                                <exclude reference="7028"/>
+                                <exclude reference="7029"/>
+                                <exclude reference="7339"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="3061"/>
+                                <include reference="3062"/>
+                                <include reference="3118"/>
+                                <include reference="3119"/>
+                                <include reference="3164"/>
+                                <include reference="6991"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="7000"/>
+                                <include reference="7001"/>
+                                <include reference="7003"/>
+                                <include reference="7008"/>
+                                <include reference="7009"/>
+                                <include reference="7010"/>
+                                <include reference="7011"/>
+                                <include reference="7012"/>
+                                <include reference="7013"/>
+                                <include reference="7014"/>
+                                <include reference="7015"/>
+                                <include reference="7017"/>
+                                <include reference="7018"/>
+                                <include reference="7019"/>
+                                <include reference="7020"/>
+                                <include reference="7021"/>
+                                <include reference="7022"/>
+                                <include reference="7023"/>
+                                <include reference="7024"/>
+                                <include reference="7025"/>
+                                <include reference="7026"/>
+                                <include reference="7027"/>
+                                <include reference="7028"/>
+                                <include reference="7029"/>
+                                <include reference="7339"/>
+                            </mask>
+                        </variation>
+                        <constraints>
+                            <constraint id="7000" firstItem="3061" firstAttribute="top" secondItem="767" secondAttribute="top" constant="128"/>
+                            <constraint id="7001" firstItem="3061" firstAttribute="leading" secondItem="767" secondAttribute="leading" constant="30"/>
+                            <constraint id="7003" firstItem="767" firstAttribute="bottom" secondItem="3061" secondAttribute="bottom" constant="567"/>
+                            <constraint id="7008" firstItem="3062" firstAttribute="top" secondItem="767" secondAttribute="top" constant="266"/>
+                            <constraint id="7009" firstItem="3062" firstAttribute="leading" secondItem="767" secondAttribute="leading" constant="30"/>
+                            <constraint id="7010" firstItem="767" firstAttribute="trailing" secondItem="3062" secondAttribute="trailing" constant="182"/>
+                            <constraint id="7011" firstItem="767" firstAttribute="bottom" secondItem="3062" secondAttribute="bottom" constant="429"/>
+                            <constraint id="7012" firstItem="3119" firstAttribute="leading" secondItem="767" secondAttribute="leading" constant="30"/>
+                            <constraint id="7013" firstItem="3119" firstAttribute="top" secondItem="767" secondAttribute="top" constant="315"/>
+                            <constraint id="7014" firstItem="767" firstAttribute="trailing" secondItem="3119" secondAttribute="trailing" constant="29"/>
+                            <constraint id="7015" firstItem="767" firstAttribute="bottom" secondItem="3119" secondAttribute="bottom" constant="371"/>
+                            <constraint id="7017" firstItem="767" firstAttribute="trailing" secondItem="3061" secondAttribute="trailing" constant="182"/>
+                            <constraint id="7018" firstItem="3118" firstAttribute="leading" secondItem="767" secondAttribute="leading" constant="30"/>
+                            <constraint id="7019" firstItem="3118" firstAttribute="top" secondItem="767" secondAttribute="top" constant="177"/>
+                            <constraint id="7020" firstItem="767" firstAttribute="trailing" secondItem="3118" secondAttribute="trailing" constant="29"/>
+                            <constraint id="7021" firstItem="767" firstAttribute="trailing" secondItem="3118" secondAttribute="trailing" constant="29"/>
+                            <constraint id="7022" firstItem="767" firstAttribute="bottom" secondItem="3118" secondAttribute="bottom" constant="509"/>
+                            <constraint id="7023" firstItem="3164" firstAttribute="leading" secondItem="767" secondAttribute="leading" constant="37"/>
+                            <constraint id="7024" firstItem="767" firstAttribute="trailing" secondItem="3164" secondAttribute="trailing" constant="37"/>
+                            <constraint id="7025" firstItem="767" firstAttribute="bottom" secondItem="3164" secondAttribute="bottom" constant="92"/>
+                            <constraint id="7026" firstItem="6991" firstAttribute="leading" secondItem="767" secondAttribute="leading" constant="37"/>
+                            <constraint id="7027" firstItem="767" firstAttribute="trailing" secondItem="6991" secondAttribute="trailing" constant="37"/>
+                            <constraint id="7028" firstItem="767" firstAttribute="bottom" secondItem="6991" secondAttribute="bottom" constant="18"/>
+                            <constraint id="7029" firstItem="6991" firstAttribute="top" secondItem="3164" secondAttribute="bottom" constant="16"/>
+                            <constraint id="7339" firstItem="3164" firstAttribute="top" secondItem="767" secondAttribute="top" constant="586"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logoutBtn" destination="3164" id="name-outlet-3164"/>
+                        <outlet property="legalBtn" destination="6991" id="name-outlet-6991"/>
+                        <outlet property="accountLabel" destination="3061" id="name-outlet-3061"/>
+                        <outlet property="accountName" destination="3118" id="name-outlet-3118"/>
+                        <outlet property="locationLabel" destination="3062" id="name-outlet-3062"/>
+                        <outlet property="locationName" destination="3119" id="name-outlet-3119"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="768" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="341" y="675"/>
+        </scene>
+        <scene sceneID="859">
+            <objects>
+                <viewController id="860" sceneMemberID="viewController" customClass="LoginViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="857"/>
+                        <viewControllerLayoutGuide type="bottom" id="858"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="861">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="865" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="37" y="460" width="340" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" backgroundImage="magpieBtn1.png" title="LOGIN">
+                                    <color key="titleShadowColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue id="6583" destination="2816" kind="show" identifier="ShowMenu"/>
+                                </connections>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                    <mask key="constraints">
+                                        <include reference="5655"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular"/>
+                                <constraints>
+                                    <constraint id="5655" firstAttribute="width" secondItem="865" secondAttribute="height" multiplier="170:29"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5655"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="23" id="1277" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Username">
+                                <rect key="frame" x="48" y="343" width="317" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4570" translatesAutoresizingMaskIntoConstraints="NO" text="MAGPIE">
+                                <rect key="frame" x="111" y="218" width="192" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4711" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="112" y="69" width="190" height="189"/>
+                                <variation key="heightClass=regular-widthClass=compact" image="magpieLogo2.png"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6591" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="36" y="540" width="340" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" backgroundImage="magpieBtn1.png" title="CREATE ACCOUNT">
+                                    <color key="titleShadowColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                </state>
+                                <connections/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="1277"/>
+                                <exclude reference="4570"/>
+                                <exclude reference="4711"/>
+                                <exclude reference="6591"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="4720"/>
+                                <exclude reference="4721"/>
+                                <exclude reference="4722"/>
+                                <exclude reference="4723"/>
+                                <exclude reference="4786"/>
+                                <exclude reference="4787"/>
+                                <exclude reference="5618"/>
+                                <exclude reference="5619"/>
+                                <exclude reference="5620"/>
+                                <exclude reference="5630"/>
+                                <exclude reference="5631"/>
+                                <exclude reference="5632"/>
+                                <exclude reference="5633"/>
+                                <exclude reference="7335"/>
+                                <exclude reference="7336"/>
+                                <exclude reference="7337"/>
+                                <exclude reference="7338"/>
+                                <exclude reference="7355"/>
+                                <exclude reference="7356"/>
+                                <exclude reference="7357"/>
+                                <exclude reference="7358"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="865"/>
+                                <include reference="1277"/>
+                                <include reference="4570"/>
+                                <include reference="4711"/>
+                                <include reference="6591"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="4720"/>
+                                <include reference="4721"/>
+                                <include reference="4722"/>
+                                <include reference="4723"/>
+                                <include reference="4786"/>
+                                <include reference="4787"/>
+                                <include reference="5618"/>
+                                <include reference="5619"/>
+                                <include reference="5620"/>
+                                <include reference="5630"/>
+                                <include reference="5631"/>
+                                <include reference="5632"/>
+                                <include reference="5633"/>
+                                <include reference="7335"/>
+                                <include reference="7336"/>
+                                <include reference="7337"/>
+                                <include reference="7338"/>
+                                <include reference="7355"/>
+                                <include reference="7356"/>
+                                <include reference="7357"/>
+                                <include reference="7358"/>
+                            </mask>
+                        </variation>
+                        <constraints>
+                            <constraint id="4720" firstItem="4711" firstAttribute="top" secondItem="857" secondAttribute="bottom" constant="49"/>
+                            <constraint id="4721" firstItem="861" firstAttribute="trailing" secondItem="4711" secondAttribute="trailing" constant="112"/>
+                            <constraint id="4722" firstItem="4711" firstAttribute="leading" secondItem="861" secondAttribute="leading" constant="112"/>
+                            <constraint id="4723" firstItem="858" firstAttribute="top" secondItem="4711" secondAttribute="bottom" constant="478"/>
+                            <constraint id="5618" firstItem="858" firstAttribute="top" secondItem="865" secondAttribute="bottom" constant="218"/>
+                            <constraint id="5619" firstItem="861" firstAttribute="trailing" secondItem="865" secondAttribute="trailing" constant="37"/>
+                            <constraint id="5620" firstItem="865" firstAttribute="leading" secondItem="861" secondAttribute="leading" constant="37"/>
+                            <constraint id="5630" firstItem="4570" firstAttribute="top" secondItem="857" secondAttribute="bottom" constant="198"/>
+                            <constraint id="5631" firstItem="861" firstAttribute="trailing" secondItem="4570" secondAttribute="trailing" constant="111"/>
+                            <constraint id="5632" firstItem="4570" firstAttribute="leading" secondItem="861" secondAttribute="leading" constant="111"/>
+                            <constraint id="5633" firstItem="858" firstAttribute="top" secondItem="4570" secondAttribute="bottom" constant="461"/>
+                            <constraint id="7335" firstItem="6591" firstAttribute="top" secondItem="865" secondAttribute="bottom" constant="22"/>
+                            <constraint id="7336" firstItem="6591" firstAttribute="leading" secondItem="861" secondAttribute="leading" constant="36"/>
+                            <constraint id="7337" firstItem="861" firstAttribute="trailing" secondItem="6591" secondAttribute="trailing" constant="38"/>
+                            <constraint id="7338" firstItem="861" firstAttribute="bottom" secondItem="6591" secondAttribute="bottom" constant="138"/>
+                            <constraint id="7355" firstItem="1277" firstAttribute="top" secondItem="861" secondAttribute="top" constant="343"/>
+                            <constraint id="7356" firstItem="861" firstAttribute="trailing" secondItem="1277" secondAttribute="trailing" constant="49"/>
+                            <constraint id="7357" firstItem="1277" firstAttribute="leading" secondItem="861" secondAttribute="leading" constant="48"/>
+                            <constraint id="7358" firstItem="861" firstAttribute="bottom" secondItem="1277" secondAttribute="bottom" constant="343"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="titleLogin" destination="4570" id="name-outlet-4570"/>
+                        <outlet property="loginBtn" destination="865" id="name-outlet-865"/>
+                        <outlet property="emailTextField" destination="1277" id="name-outlet-1277"/>
+                        <outlet property="logoImg" destination="4711" id="name-outlet-4711"/>
+                        <outlet property="AddAccountbtn" destination="6591" id="name-outlet-6591"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="862" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1465" y="-392"/>
+        </scene>
+        <scene sceneID="2815">
+            <objects>
+                <navigationController id="2816" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2818">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <variation key="heightClass=regular-widthClass=compact"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="2903" destination="198" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2819" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-728" y="-401"/>
+        </scene>
+        <scene sceneID="5289">
+            <objects>
+                <tableViewController id="5290" sceneMemberID="viewController" customClass="badgesUITableViewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="5291">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes/>
+                        <connections>
+                            <outlet property="dataSource" destination="5290" id="5292"/>
+                            <outlet property="delegate" destination="5290" id="5293"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="badgeTableView" destination="5291" id="name-outlet-5291"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5296" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824" y="-194"/>
+        </scene>
+        <scene sceneID="5724">
+            <objects>
+                <viewController id="5725" sceneMemberID="viewController" customClass="MapviewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5722"/>
+                        <viewControllerLayoutGuide type="bottom" id="5723"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5726">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <containerView contentMode="scaleToFill" id="5755" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="488" width="414" height="128"/>
+                                <connections/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES"/>
+                            </containerView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="5734" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="64" width="414" height="422"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5731" fixedFrame="YES">
+                                <rect key="frame" x="116" y="438" width="181" height="29"/>
+                                <segments>
+                                    <segment title="Map"/>
+                                    <segment title="Satellite"/>
+                                    <segment title="Hybrid"/>
+                                </segments>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5766" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="13" y="79" width="45" height="45"/>
+                                <state key="normal" image="images/currentlocation.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6816" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="500" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5768" translatesAutoresizingMaskIntoConstraints="NO" text="0">
+                                <rect key="frame" x="20" y="574" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5767" translatesAutoresizingMaskIntoConstraints="NO" text="0">
+                                <rect key="frame" x="255" y="574" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6871" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="5" y="625" width="70" height="70"/>
+                                <state key="normal" backgroundImage="arrowLeftBtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0" green="0.52549019607843139" blue="1" alpha="1"/>
+                                </state>
+                                <connections/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6872" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="339" y="625" width="70" height="70"/>
+                                <state key="normal" backgroundImage="arrowRightBtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0" green="0.52549019607843139" blue="1" alpha="1"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6912" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="72" y="680" width="270" height="46"/>
+                                <state key="normal" title="VIEW BADGE" backgroundImage="magpieBtn1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MINUTES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6974" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="66" y="574" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MILES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6975" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="301" y="574" width="113" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7340" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="529" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="6885" firstItem="5734" firstAttribute="top" secondItem="5726" secondAttribute="top" constant="64"/>
+                            <constraint id="6886" firstItem="5734" firstAttribute="leading" secondItem="5726" secondAttribute="leading"/>
+                            <constraint id="6887" firstItem="5734" firstAttribute="trailing" secondItem="5726" secondAttribute="trailing"/>
+                            <constraint id="6888" firstItem="5726" firstAttribute="bottom" secondItem="5734" secondAttribute="bottom" constant="250"/>
+                            <constraint id="6889" firstItem="6816" firstAttribute="leading" secondItem="5726" secondAttribute="leading" constant="20"/>
+                            <constraint id="6890" firstItem="6816" firstAttribute="top" secondItem="5726" secondAttribute="top" constant="500"/>
+                            <constraint id="6932" firstItem="5726" firstAttribute="bottom" secondItem="6912" secondAttribute="bottom" constant="10"/>
+                            <constraint id="6933" firstItem="6912" firstAttribute="top" secondItem="5726" secondAttribute="top" constant="680"/>
+                            <constraint id="6934" firstItem="6912" firstAttribute="leading" secondItem="5726" secondAttribute="leading" constant="72"/>
+                            <constraint id="6935" firstItem="5726" firstAttribute="trailing" secondItem="6912" secondAttribute="trailing" constant="72"/>
+                            <constraint id="6936" firstItem="6871" firstAttribute="leading" secondItem="5726" secondAttribute="leading" constant="5"/>
+                            <constraint id="6937" firstItem="5726" firstAttribute="trailing" secondItem="6871" secondAttribute="trailing" constant="339"/>
+                            <constraint id="6938" firstItem="5726" firstAttribute="bottom" secondItem="6871" secondAttribute="bottom" constant="41"/>
+                            <constraint id="6939" firstItem="6871" firstAttribute="top" secondItem="5726" secondAttribute="top" constant="625"/>
+                            <constraint id="6940" firstItem="6872" firstAttribute="leading" secondItem="5726" secondAttribute="leading" constant="339"/>
+                            <constraint id="6941" firstItem="5726" firstAttribute="trailing" secondItem="6872" secondAttribute="trailing" constant="5"/>
+                            <constraint id="6942" firstItem="5726" firstAttribute="bottom" secondItem="6872" secondAttribute="bottom" constant="41"/>
+                            <constraint id="6943" firstItem="6872" firstAttribute="top" secondItem="5726" secondAttribute="top" constant="625"/>
+                            <constraint id="6971" firstItem="5755" firstAttribute="top" secondItem="5726" secondAttribute="top" constant="488"/>
+                            <constraint id="6972" firstItem="5755" firstAttribute="leading" secondItem="5726" secondAttribute="leading"/>
+                            <constraint id="6973" firstItem="5755" firstAttribute="trailing" secondItem="5726" secondAttribute="trailing"/>
+                            <constraint id="6977" firstItem="5768" firstAttribute="leading" secondItem="5726" secondAttribute="leading" constant="20"/>
+                            <constraint id="6978" firstItem="5768" firstAttribute="top" secondItem="5726" secondAttribute="top" constant="574"/>
+                            <constraint id="6980" firstItem="6974" firstAttribute="top" secondItem="5726" secondAttribute="top" constant="574"/>
+                            <constraint id="6981" firstItem="5726" firstAttribute="trailing" secondItem="5767" secondAttribute="trailing" constant="117"/>
+                            <constraint id="6982" firstItem="5767" firstAttribute="top" secondItem="5726" secondAttribute="top" constant="574"/>
+                            <constraint id="6983" firstItem="6975" firstAttribute="trailing" secondItem="5726" secondAttribute="trailing"/>
+                            <constraint id="6984" firstItem="6975" firstAttribute="top" secondItem="5726" secondAttribute="top" constant="574"/>
+                            <constraint id="6986" firstItem="6974" firstAttribute="leading" secondItem="5768" secondAttribute="trailing" constant="4"/>
+                            <constraint id="6987" firstItem="6975" firstAttribute="leading" secondItem="5767" secondAttribute="trailing" constant="4"/>
+                            <constraint id="6988" firstItem="5766" firstAttribute="top" secondItem="5726" secondAttribute="top" constant="79"/>
+                            <constraint id="6989" firstItem="5766" firstAttribute="leading" secondItem="5726" secondAttribute="leading" constant="13"/>
+                            <constraint id="6990" firstItem="5726" firstAttribute="trailing" secondItem="5766" secondAttribute="trailing" constant="356"/>
+                            <constraint id="7341" firstItem="7340" firstAttribute="leading" secondItem="5726" secondAttribute="leading" constant="20"/>
+                            <constraint id="7342" firstItem="7340" firstAttribute="top" secondItem="5726" secondAttribute="top" constant="529"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5802"/>
+                                <exclude reference="6885"/>
+                                <exclude reference="6886"/>
+                                <exclude reference="6887"/>
+                                <exclude reference="6888"/>
+                                <exclude reference="6889"/>
+                                <exclude reference="6890"/>
+                                <exclude reference="6932"/>
+                                <exclude reference="6933"/>
+                                <exclude reference="6934"/>
+                                <exclude reference="6935"/>
+                                <exclude reference="6936"/>
+                                <exclude reference="6937"/>
+                                <exclude reference="6938"/>
+                                <exclude reference="6939"/>
+                                <exclude reference="6940"/>
+                                <exclude reference="6941"/>
+                                <exclude reference="6942"/>
+                                <exclude reference="6943"/>
+                                <exclude reference="6971"/>
+                                <exclude reference="6972"/>
+                                <exclude reference="6973"/>
+                                <exclude reference="6977"/>
+                                <exclude reference="6978"/>
+                                <exclude reference="6980"/>
+                                <exclude reference="6981"/>
+                                <exclude reference="6982"/>
+                                <exclude reference="6983"/>
+                                <exclude reference="6984"/>
+                                <exclude reference="6986"/>
+                                <exclude reference="6987"/>
+                                <exclude reference="6988"/>
+                                <exclude reference="6989"/>
+                                <exclude reference="6990"/>
+                                <exclude reference="7341"/>
+                                <exclude reference="7342"/>
+                            </mask>
+                            <mask key="subviews">
+                                <exclude reference="6816"/>
+                                <exclude reference="6871"/>
+                                <exclude reference="6872"/>
+                                <exclude reference="6912"/>
+                                <exclude reference="6974"/>
+                                <exclude reference="6975"/>
+                                <exclude reference="7340"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="5802"/>
+                                <include reference="6885"/>
+                                <include reference="6886"/>
+                                <include reference="6887"/>
+                                <include reference="6888"/>
+                                <include reference="6889"/>
+                                <include reference="6890"/>
+                                <include reference="6932"/>
+                                <include reference="6933"/>
+                                <include reference="6934"/>
+                                <include reference="6935"/>
+                                <include reference="6936"/>
+                                <include reference="6937"/>
+                                <include reference="6938"/>
+                                <include reference="6939"/>
+                                <include reference="6940"/>
+                                <include reference="6941"/>
+                                <include reference="6942"/>
+                                <include reference="6943"/>
+                                <include reference="6971"/>
+                                <include reference="6972"/>
+                                <include reference="6973"/>
+                                <include reference="6977"/>
+                                <include reference="6978"/>
+                                <include reference="6980"/>
+                                <include reference="6981"/>
+                                <include reference="6982"/>
+                                <include reference="6983"/>
+                                <include reference="6984"/>
+                                <include reference="6986"/>
+                                <include reference="6987"/>
+                                <include reference="6988"/>
+                                <include reference="6989"/>
+                                <include reference="6990"/>
+                                <include reference="7341"/>
+                                <include reference="7342"/>
+                            </mask>
+                            <mask key="subviews">
+                                <include reference="6816"/>
+                                <include reference="6871"/>
+                                <include reference="6872"/>
+                                <include reference="6912"/>
+                                <include reference="6974"/>
+                                <include reference="6975"/>
+                                <include reference="7340"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="mapToggle" destination="5731" id="name-outlet-5731"/>
+                        <outlet property="map" destination="5734" id="name-outlet-5734"/>
+                        <outlet property="CollectionDistance" destination="5755" id="name-outlet-5755"/>
+                        <outlet property="_btnCurrentLocation" destination="5766" id="name-outlet-5766"/>
+                        <outlet property="milesTo" destination="5767" id="name-outlet-5767"/>
+                        <outlet property="DistanceAway" destination="5768" id="name-outlet-5768"/>
+                        <outlet property="SculptureTitle" destination="6816" id="name-outlet-6816"/>
+                        <outlet property="LeftAnnotation" destination="6871" id="name-outlet-6871"/>
+                        <outlet property="RightAnnotation" destination="6872" id="name-outlet-6872"/>
+                        <outlet property="DistanceAwayLabel" destination="6974" id="name-outlet-6974"/>
+                        <outlet property="milesToLabel" destination="6975" id="name-outlet-6975"/>
+                        <outlet property="SculptureSubtitle" destination="7340" id="name-outlet-7340"/>
+                        <outlet property="viewBadgeBtn" destination="6912" id="name-outlet-6912"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5727" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="649"/>
+        </scene>
+        <scene sceneID="6726">
+            <objects>
+                <viewController id="6727" sceneMemberID="viewController" customClass="ScannerView">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6724"/>
+                        <viewControllerLayoutGuide type="bottom" id="6725"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6728">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6731" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="37" y="339" width="340" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28" weight="heavy"/>
+                                <state key="normal" title="QR SCAN" backgroundImage="magpieBtn2.png">
+                                    <color key="titleShadowColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                </state>
+                                <connections/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="6734"/>
+                                        <include reference="6735"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="6734" firstAttribute="width" constant="340"/>
+                                    <constraint id="6735" firstAttribute="height" constant="58"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6734"/>
+                                        <exclude reference="6735"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="6731"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="6732"/>
+                                <exclude reference="6733"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="6731"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6732"/>
+                                <include reference="6733"/>
+                            </mask>
+                        </variation>
+                        <constraints>
+                            <constraint id="6732" firstItem="6728" firstAttribute="bottom" secondItem="6731" secondAttribute="bottom" constant="339"/>
+                            <constraint id="6733" firstItem="6728" firstAttribute="trailing" secondItem="6731" secondAttribute="trailing" constant="37"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scan" destination="6731" id="name-outlet-6731"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6729" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-258" y="491"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="loginBtn.png" width="127" height="128"/>
+        <image name="defaultBadge.png" width="414" height="230"/>
+        <image name="badges/SSW_AliveLivelyLiving.png" width="334" height="287"/>
+        <image name="badges/SSW_AluminumFountain.png" width="334" height="287"/>
+        <image name="badges/SSW_AustralianSundial.png" width="334" height="287"/>
+        <image name="badges/SSW_CentennialSculpture.png" width="334" height="287"/>
+        <image name="badges/SSW_Cooperation.png" width="334" height="287"/>
+        <image name="badges/SSW_EastWestArbor.png" width="334" height="287"/>
+        <image name="badges/SSW_FootstepsToTheFuture.png" width="334" height="287"/>
+        <image name="badges/SSW_FromThisEarth.png" width="334" height="287"/>
+        <image name="badges/SSW_Goat.png" width="334" height="287"/>
+        <image name="badges/SSW_LightReading.png" width="334" height="287"/>
+        <image name="badges/SSW_MoonCrater.png" width="334" height="287"/>
+        <image name="badges/SSW_MountainSheep.png" width="334" height="287"/>
+        <image name="badges/SSW_RiverpointObservatory.png" width="334" height="287"/>
+        <image name="badges/SSW_Shamil.png" width="334" height="287"/>
+        <image name="badges/SSW_TheCallAndTheChallenge.png" width="334" height="287"/>
+        <image name="badges/SSW_TheChildhoodExpress.png" width="334" height="287"/>
+        <image name="badges/SSW_TheJoyOfRunningTogether.png" width="334" height="287"/>
+        <image name="badges/SSW_ThePlaceWhereGhostsOfSalmonJump.png" width="334" height="287"/>
+        <image name="badges/SSW_RotaryRiverfrontFountain.png" width="334" height="287"/>
+        <image name="logo.png" width="392" height="391"/>
+        <image name="magpieLogo2.png" width="331" height="331"/>
+        <image name="bkgv2.jpg" width="320" height="480"/>
+        <image name="magpieBtn1.png" width="242" height="41"/>
+        <image name="magpieBtn2.png" width="241" height="41"/>
+        <image name="badges/SSW_MichaelP.AndersonMemorial.png" width="334" height="287"/>
+        <image name="badges/SSW_VietnamVeteransMemorial.png" width="334" height="287"/>
+        <image name="mapBtn.png" width="62" height="57"/>
+        <image name="mapIcon.png" width="513" height="449"/>
+        <image name="shareIcon.png" width="457" height="509"/>
+        <image name="images/Icon-Small.png" width="29" height="29"/>
+        <image name="images/currentlocation.png" width="48" height="48"/>
+        <image name="arrowLeftBtn.png" width="101" height="102"/>
+        <image name="arrowRightBtn.png" width="101" height="102"/>
+        <image name="badges/SSW_Lantern.png" width="334" height="287"/>
+        <image name="graybadges/Magpie_BlankGrayscaleBadge.png" width="334" height="287"/>
+        <image name="graybadges/SSW_AliveLivelyLiving.png" width="334" height="287"/>
+        <image name="graybadges/SSW_AluminumFountain.png" width="334" height="287"/>
+        <image name="graybadges/SSW_AustralianSundial.png" width="334" height="287"/>
+        <image name="graybadges/SSW_CentennialSculpture.png" width="334" height="287"/>
+        <image name="graybadges/SSW_Cooperation.png" width="334" height="287"/>
+        <image name="graybadges/SSW_EastWestArbor.png" width="334" height="287"/>
+        <image name="graybadges/SSW_FootstepsToTheFuture.png" width="334" height="287"/>
+        <image name="graybadges/SSW_FromThisEarth.png" width="334" height="287"/>
+        <image name="graybadges/SSW_Goat.png" width="334" height="287"/>
+        <image name="graybadges/SSW_Lantern.png" width="334" height="287"/>
+        <image name="graybadges/SSW_LightReading.png" width="334" height="287"/>
+        <image name="graybadges/SSW_MichaelPAndersonMemorial.png" width="334" height="287"/>
+        <image name="graybadges/SSW_MoonCrater.png" width="334" height="287"/>
+        <image name="graybadges/SSW_MountainSheep.png" width="334" height="287"/>
+        <image name="graybadges/SSW_Shamil.png" width="334" height="287"/>
+        <image name="graybadges/SSW_TheCallAndTheChallenge.png" width="334" height="287"/>
+        <image name="graybadges/SSW_TheChildhoodExpress.png" width="334" height="287"/>
+        <image name="graybadges/SSW_TheJoyOfRunningTogether.png" width="334" height="287"/>
+        <image name="graybadges/SSW_ThePlaceWhereGhostsOfSalmonJump.png" width="334" height="287"/>
+        <image name="graybadges/SSW_VietnamVeteransMemorial.png" width="334" height="287"/>
+        <image name="graybadges/SSW_RotaryRiverfrontFountain.png" width="334" height="287"/>
+        <image name="graybadges/SSW_RiverpointObservatory.png" width="334" height="287"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina55"/>
+    </simulatedMetricsContainer>
+</document>

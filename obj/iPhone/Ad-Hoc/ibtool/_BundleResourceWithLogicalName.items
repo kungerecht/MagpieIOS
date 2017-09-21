@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Ad-Hoc/ibtool-link/LaunchScreen.nib">
+      <LogicalName>LaunchScreen.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Ad-Hoc/ibtool-link/Main.storyboardc/198-view-199.nib">
+      <LogicalName>Main.storyboardc/198-view-199.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Ad-Hoc/ibtool-link/Main.storyboardc/4083-view-4084.nib">
+      <LogicalName>Main.storyboardc/4083-view-4084.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Ad-Hoc/ibtool-link/Main.storyboardc/5290-view-5291.nib">
+      <LogicalName>Main.storyboardc/5290-view-5291.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Ad-Hoc/ibtool-link/Main.storyboardc/766-view-767.nib">
+      <LogicalName>Main.storyboardc/766-view-767.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Ad-Hoc/ibtool-link/Main.storyboardc/860-view-861.nib">
+      <LogicalName>Main.storyboardc/860-view-861.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Ad-Hoc/ibtool-link/Main.storyboardc/Info.plist">
+      <LogicalName>Main.storyboardc/Info.plist</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Ad-Hoc/ibtool-link/Main.storyboardc/UINavigationController-2816.nib">
+      <LogicalName>Main.storyboardc/UINavigationController-2816.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Ad-Hoc/ibtool-link/Main.storyboardc/UITableViewController-5290.nib">
+      <LogicalName>Main.storyboardc/UITableViewController-5290.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Ad-Hoc/ibtool-link/Main.storyboardc/UIViewController-4083.nib">
+      <LogicalName>Main.storyboardc/UIViewController-4083.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Ad-Hoc/ibtool-link/Main.storyboardc/UIViewController-766.nib">
+      <LogicalName>Main.storyboardc/UIViewController-766.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Ad-Hoc/ibtool-link/Main.storyboardc/UIViewController-860.nib">
+      <LogicalName>Main.storyboardc/UIViewController-860.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+  </ItemGroup>
+</Project>
