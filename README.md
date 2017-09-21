@@ -1,0 +1,1 @@
+Hello I built this application with a team in my senior capstone. I've reuploaded it on this account for the purpose of sharing my previous projects. This application was created with Xamarin for iOS in Microsoft Visual Studio using the C# language.
